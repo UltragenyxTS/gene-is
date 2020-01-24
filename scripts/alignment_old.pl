@@ -145,10 +145,9 @@ if ($type eq "AGILENT") {
 			#system("echo \"awk  -F $scripts_dir/correctSam.awk $output_dir/$aOut_value.sam > app.sam;mv app.sam  $output_dir/$aOut_value.sam\"");
 			#`awk -f $scripts_dir/correctSam.awk $output_dir/$aOut_value.sam > app.sam;mv app.sam  $output_dir/$aOut_value.sam`;
 			`$samtools view -Sb $output_dir/$aOut_value.sam  > $output_dir/$aOut_value.bam `;
-			`$samtools sort -n $output_dir/$aOut_value.bam -o $output_dir/$aOut_value.sorted.bam `;
+			`$samtools sort -n $output_dir/$aOut_value.bam -o $output_dir/$aOut_value.sorted `;
 			`$samtools index $output_dir/$aOut_value.sorted.bam `;
-			`$samtools rmdup $output_dir/$aOut_value.sorted.bam -o $output_dir/$aOut_value.nodup.bam `;
-                        `$samtools sort -n $output_dir/$aOut_value.nodup.bam -o $output_dir/$aOut_value.nodup.bam `;
+			`$samtools rmdup $output_dir/$aOut_value.sorted.bam $output_dir/$aOut_value.nodup.bam `;
 			`$samtools index $output_dir/$aOut_value.nodup.bam `;
     		}else{
        	       		# For single end

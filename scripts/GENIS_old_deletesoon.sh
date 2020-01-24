@@ -195,14 +195,14 @@ if(!$config->has_value("threads")) {
 my $aligner = $config->get_value("aligner");
 my $alignmentOut = $config->get_value("alignmentOut"); 
 if ($type eq "AGILENT") {
-	my $suffOut = $config->get_value("suffOut").'-trimmed';
+	my $suffOut = $config->get_value("suffOut");
 	print "=======>>>>>>>>>>>> $paired\n";
 	if ($paired){
 		if($reverseOut) {
 			my $reverse=$reverseOut;
 		}
-       	 	system "(echo \"perl -I $libDir $scriptDir/alignment.pl  -p $threads -f $suffOut-pair1.fastq -r $suffOut-pair2.fastq  -gv $genomeVectorIndex  -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -s $scriptDir -sam $samtools \" )";
-        	system "(perl -I $libDir $scriptDir/alignment.pl  -p $threads -f $suffOut-pair1.fastq -r $suffOut-pair2.fastq  -gv $genomeVectorIndex  -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -s $scriptDir -sam $samtools )";
+       	 	system "(echo \"perl -I $libDir $scriptDir/alignment.pl  -p $threads -f /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/$suffOut-trimmed-pair1.fastq -r /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/$suffOut-trimmed-pair2.fastq  -gv $genomeVectorIndex  -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -s $scriptDir -sam $samtools \" )";
+        	system "(perl -I $libDir $scriptDir/alignment.pl  -p $threads -f /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/$suffOut-trimmed-pair1.fastq -r /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/$suffOut-trimmed-pair2.fastq  -gv $genomeVectorIndex  -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -s $scriptDir -sam $samtools )";
 	}else {
 		system "(echo \"perl -I $libDir $scriptDir/alignment.pl  -p $threads -f $suffOut.fastq  -gv $genomeVectorIndex   -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -sam $samtools \" )";
 		system "(perl -I $libDir $scriptDir/alignment.pl  -p $threads -f $suffOut.fastq  -gv $genomeVectorIndex   -a $aligner  -aOut $alignmentOut  -o $output_dir -t $type -sam $samtools )";

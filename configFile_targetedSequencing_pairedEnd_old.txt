@@ -16,11 +16,11 @@ threads=2
 ## 			Input data files 
 #############################################################################
 ## Provide path to both forward and reverse FATSQ files
-forward= $GENIS/dxfiles/AS-415195-LR-46844_R1.fastq.gz 
-reverse =$GENIS/dxfiles/AS-415195-LR-46844_R2.fastq.gz
+forward= $GENIS/test/targetedSequencing/testData.TS.pair1.fastq.gz 
+reverse =$GENIS/test/targetedSequencing/testData.TS.pair2.fastq.gz
 #provide sample name PREFIX that would be used as prefix for final result file
 #Please do not include any space or strange characters
-sampleName = AS-415195-LR-46844
+sampleName = testDataTS
 #############################################################################
 #############################################################################
 ## 	Quality filtration and adapter trimming parameters
@@ -34,8 +34,7 @@ adaptF = GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
 #Adapter to trim from reverse file
 adaptR = AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT   
 #Use default output file names for forward and reverse files (DO NOT CHANGE)
-#1/21/2020 LB changed this from filtTrim to filtTrim-trimmed to test/fix a bug
-suffOut = filtTrim-trimmed
+suffOut = filtTrim
 
 #############################################################################
 #############################################################################
@@ -45,11 +44,11 @@ suffOut = filtTrim-trimmed
 alignmentOut = completAlignment
 
 ##Provide path to the directory containing BWA aligner based index files and fasta file for refernce+vector genome
-genomeVectorIndex=$GENIS/dxrefs/mm10_p3653assembly.fa 
-genomeVector= $GENIS/dxrefs/sean_p3653.fa
+genomeVectorIndex=$GENIS/test/datasets/testGenomeVector.fa 
+genomeVector= $GENIS/test/datasets/VECTOR.fa
 
 #Specify the exact vector name that is mentioned in the refernce/vector fasta sequence file
-vectorString = Exported synthetic linear DNA
+vectorString = VECTOR
 
 #Minimum alignment identity percentage for re-alignment step with BLAT (default value 95)
 minIden=95
@@ -65,30 +64,30 @@ specificity=0
 #Provide path to these third-party tools
 #############################################################################
 #Provide path to the BWA aligner
-aligner     = /usr/local/bin/bwa
+aligner     = $GENIS/tools/bin/bwa
 #############################################################################
 #Path to the secondary aligner. (BLAT)
 #megaAligner = megablast
-blatAligner =  /usr/local/bin/blat
+blatAligner =  $GENIS/tools/bin/blat
 #Path to the BLAT indexed file of refernce genome and vector.
 genomeVectorIndexBlat=$GENIS/test/datasets/testGenomeVector.fa.2bit
 #Path to the trimming and filtering tool (Skewer)
-skewer = /usr/bin/skewer
+skewer = $GENIS/tools/bin/skewer
 #Path to the Samtools
-samtools= /usr/local/bin/samtools
+samtools= $GENIS/tools/bin/samtools
 #Path to the bedtools
-bedTools= /usr/bin/bedtools
+bedTools= $GENIS/tools/bin/bedtools
 ############################################################################
 #Files path required for annotation
 #a complete UCSC refSeq table downloaded from UCSC (should be in text format)
-UCSCAnnoFile= $GENIS/dxrefs/genewerks_mm10_refseq.txt
+UCSCAnnoFile= $GENIS/test/datasets/UCSC.anno.table_hg38.txt
 ############################################################################
 ############################################################################
 #For approx IS extraction (TRUE/FALSE)
 approxIS=FALSE
 #Provide path to individual separate BWA based indexed fasta files for vector and for reference genome respectively.
-vectorIndexOut = $GENIS/dxrefs/sean_p3653.fa
-genomeIndexOut = $GENIS/dxrefs/Mus_musculus.GRCm38.dna.primary_assembly.fa
+vectorIndexOut = $GENIS/test/datasets/VECTOR.fa
+genomeIndexOut = $GENIS/test/datasets/testOnlyGenome.fa
 ############################################################################
 ############################################################################
 #For extra stringent filtering of IS reads TRUE/FALSE

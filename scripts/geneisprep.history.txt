@@ -1,0 +1,822 @@
+    1  ll
+    2  ls -al
+    3  more .bashrc 
+    4  mkdir .ssh
+    5  chmod 700 .ssh/
+    6  touch .ssh/authorized_keys
+    7  exit
+    8  cd .ssh/
+    9  ll
+   10  vi authorized_keys 
+   11  chmod 600 authorized_keys 
+   12  ll
+   13  cd ..
+   14  ll
+   15  ls -al
+   16  exit
+   17  ll
+   18  ls -al
+   19  exit
+   20  ll
+   21  ls -al
+   22  exit
+   23  cd .ssh/
+   24  vi authorized_keys 
+   25  exit
+   26  ls -arlt
+   27  pwd
+   28  exit
+   29  ll
+   30  ls -al
+   31  who
+   32  exit
+   33  sudo whoami
+   34  exit
+   35  groups
+   36  sudo whoami
+   37  exit
+   38  ls -arlt
+   39  top
+   40  ls -arlt
+   41  cd .local/
+   42  ls -arlt
+   43  cd share/
+   44  ls -arlt
+   45  cd 
+   46  ls -arlt
+   47  vim~/.bash_profile
+   48  cat ~/.bash_profile
+   49  cat ~/.bashrc
+   50  python
+   51  which python
+   52  apt-get update
+   53  vim ~/.bashrc
+   54  vi ~/.bashprofile
+   55  vi ~/.bash_profile
+   56  yum
+   57  gcc --version gcc
+   58  yum list all
+   59  ls -arlt
+   60  # Get latest STAR source from releases
+   61  wget https://github.com/alexdobin/STAR/archive/2.7.3a.tar.gz
+   62  tar -xzf 2.7.3a.tar.gz
+   63  cd STAR-2.7.3a
+   64  cd source/
+   65  make STAR
+   66  ruby
+   67  # with curl
+   68  curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
+   69  ls -arlt
+   70  pwd
+   71  logout
+   72  cd /usr/local/projects/TAKEDA_08MAY2017/
+   73  ls -arlt
+   74  cd illumina_data/
+   75  ls -arlt
+   76  cd QC
+   77  ls -arlt
+   78  cd Alignments
+   79  cd ..
+   80  cd Alignments
+   81  ls -arlt
+   82  cd BAM_files_ensembl/
+   83  ls -arlt
+   84  cd ..
+   85  ls -arlt
+   86  cd /usr/local/projects/TAKEDA_08MAY2017/
+   87  ls -arlt
+   88  cd illumina_data/
+   89  ls -arlt
+   90  gunzip -cd PBMC_8_S32_R1_001.fastq_trimmed.gz |head
+   91  pwd
+   92  ls -arlt
+   93  pwd
+   94  ls -arlt
+   95  cd ..
+   96  ls -arlt
+   97  cd counts
+   98  l s-arlt
+   99  ls -arlt
+  100  cd coutn_files
+  101  ls -arlt
+  102  cd count_files/
+  103  ls a-rlt;
+  104  ls -arlt
+  105  head PBMC_8.counts 
+  106  cat ../htseq.sh 
+  107  cd ..
+  108  ls -arlt
+  109  cd ..
+  110  ls -arlt
+  111  dx login
+  112  top
+  113  ls -arlt
+  114  cd reference
+  115  ls -arlt
+  116  ls -arlt --block-size=G
+  117  ls -arlt --block-size=M
+  118  wget ftp://ftp.ensembl.org/pub/release-98/gtf/macaca_fascicularis/Macaca_fascicularis.Macaca_fascicularis_5.0.98.gtf.gz
+  119  gunzip -cd Macaca_fascicularis.Macaca_fascicularis_5.0.98.gtf.gz 
+  120  gtar zxvf caca_fascicularis.Macaca_fascicularis_5.0.98.gtf.gz 
+  121  gunzip Macaca_fascicularis.Macaca_fascicularis_5.0.98.gtf.gz 
+  122  ls -arlt --block-size=G
+  123  ls -arlt --block-size=M
+  124  head Macaca_fascicularis.Macaca_fascicularis_5.0.98.gtf 
+  125  ls
+  126  rm Macaca_fascicularis.Macaca_fascicularis_5.0.98.gtf 
+  127  pip install hgvs
+  128  sudo pip install hgvs
+  129  cd /usr/local/projects/TAKEDA_08MAY2017/
+  130  ls -arlt
+  131  cd counts
+  132  ls-arlt
+  133  ls -arlt
+  134  head htseq.sh 
+  135  ls ../Alignments/BAM_files_NCBI
+  136  ls -arlt ../Alignments/BAM_files_NCBI
+  137  htseq-count
+  138  ls -arlt
+  139  wget 
+  140  wget http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.0/sratoolkit.2.10.0-centos_linux64.tar.gz
+  141  tar -xvzf sratoolkit.2.10.0-centos_linux64.tar.gz 
+  142  ls -arlt
+  143  rm -rf sratoolkit*
+  144  ls -arlt
+  145  wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.0/setup-yum.sh
+  146  bash setup-yum.sh 
+  147  source /etc/profile.d/sra-tools.sh
+  148  sudo bash setup-yum.sh 
+  149  source /etc/profile.d/sra-tools.sh
+  150  vdb-config -i
+  151  dx login
+  152  vim ~/.bashrc
+  153  vi ~/.bash_profile
+  154  . ~/.bash_profile
+  155  dxt
+  156  cd /usr/local/projects/TAKEDA_08MAY2017/ 
+  157  ls -arlt
+  158  dx mkdir TAKEDA_08MAY2017
+  159  cd
+  160  wget https://dnanexus-sdk.s3.amazonaws.com/dx-toolkit-v0.289.1-centos-amd64.tar.gz
+  161  tar -xzf dx-toolkit-v0.289.1-centos-amd64.tar.gz 
+  162  source dx-toolkit/environment
+  163  ./ua
+  164  wget https://dnanexus-sdk.s3.amazonaws.com/dnanexus-upload-agent-1.5.31-linux.tar.gz
+  165  tar -xzf dnanexus-upload-agent-1.5.31-linux.tar.gz 
+  166  cd dnanexus-upload-agent-1.5.31-linux
+  167  ls a-rlt
+  168  ./ua
+  169  cd /usr/local/projects/TAKEDA_08MAY2017/ 
+  170  dx cd TAKEDA_08MAY2017
+  171  ./ua *
+  172  ~/dnanexus-upload-agent-1.5.31-linux/ua *
+  173  ls -arlt
+  174  cd /usr/local/projects/TAKEDA_08MAY2017/
+  175  dx ls
+  176  dx pwd
+  177  dx cd reference
+  178  dx ls
+  179  dx cd ..
+  180  dx mkdir fasta
+  181  dx cd fasta
+  182  mkdir fasta
+  183  cd fasta
+  184  history |grep rsync
+  185  vim ~/.bash_profile 
+  186  vi ~/.bash_profile
+  187  cd /usr/local/projects/TAKEDA_08MAY2017/
+  188  ls -arlt
+  189  cd Alignments/
+  190  ls -arlt
+  191  cd ..
+  192  ls -arlt
+  193  dx login
+  194  dxt
+  195  dx cd TAKEDA_08MAY2017
+  196  dx ls
+  197  ls -arlt
+  198  pwd
+  199  dx pwd
+  200  screen dx upload -r *
+  201  dx upload -r *
+  202  dx upload -r counts/
+  203  dx help upload
+  204  ls -arlt
+  205  dx cd counts
+  206  cd counts
+  207  screen dx upload -r *
+  208  yum install screen
+  209  sudo yum install screen
+  210  screen dx upload -r *
+  211  dx upload -r *
+  212  pwd
+  213  ls -arlt
+  214  cd ..
+  215  ls -arlt
+  216  dx pwd
+  217  dx cd ../illumina_data
+  218  cd illumina_data/
+  219  ls -arlt
+  220  dx pwd
+  221  dx upload -r *
+  222  cd ..
+  223  ls -arlt
+  224  dx cd ..
+  225  cd QC
+  226  ls -arlt
+  227  vim ~/.bash_profile
+  228  vi ~/.bash_profile
+  229  dxt
+  230  cd /usr/local/projects/TAKEDA_08MAY2017/ 
+  231  ls -arlt
+  232  cd fasta
+  233  ls -arlt
+  234  cd ..
+  235  cd reference/
+  236  ls -arlt
+  237  dx ls
+  238  ls
+  239  dx ls TAKEDA
+  240  dx ls TAKEDA*
+  241  dx cd TAKEDA_08MAY2017
+  242  dx ls
+  243  dx cd illumina_data
+  244  dx cd ../reference
+  245  dx ls
+  246  dx upload Macaca_fascicularis.MacFas_5.0.76.dna.toplevel.fa 
+  247  dx ls
+  248  dx ls -l
+  249  ls -arlt
+  250  cd ..
+  251  ls -arlt
+  252  cd Alignments/
+  253  ls -arlt
+  254  cat README
+  255  cd alignment_summary/
+  256  ls -arlt
+  257  cat Hippo_1_summary.txt 
+  258  cd ..
+  259  ls -arlt
+  260  cd QC
+  261  ls -arlt
+  262  cat QC.sh 
+  263  ls -arlt
+  264  history
+  265  history |grep Mac
+  266  cd /usr/local/projects/TAKEDA_08MAY2017/
+  267  ls -arlt
+  268  cd fasta
+  269  ls -arlt
+  270  cd ..
+  271  cd reference/
+  272  ls -arl
+  273  cd ..
+  274  mkdir reference98
+  275  cd reference98
+  276  ls a-rlt
+  277  ls -arlt
+  278  wget ftp://ftp.ensembl.org/pub/release-98/fasta/macaca_fascicularis/dna/Macaca_fascicularis.Macaca_fascicularis_5.0.dna.toplevel.fa.gz
+  279  dx select
+  280  gunzip Macaca_fascicularis.Macaca_fascicularis_5.0.dna.toplevel.fa.gz 
+  281  ls -arlt
+  282  dx cd reference
+  283  dx ls
+  284  dx cd TAKEDA_08MAY2017/referencwe
+  285  dx cd TAKEDA_08MAY2017/reference
+  286  dx upload Macaca_fascicularis.Macaca_fascicularis_5.0.dna.toplevel.fa 
+  287  dx ssh job-FgYK9400yFy1XVX89b6QG7Z1
+  288  dx ssh_config
+  289  dx ssh job-FgYK9400yFy1XVX89b6QG7Z1
+  290  history |grep cloud
+  291  dx ssh job-FgYK9400yFy1XVX89b6QG7Z1
+  292  history |grep cloud
+  293  dx run --allow-ssh cloud_workstation
+  294  dx run --ssh cloud_workstation
+  295  dx run --allow-ssh cloud_workstation
+  296  dx run --ssh cloud_workstation
+  297  dx cd trimmed
+  298  dx ls
+  299  dx cd ../trimmed
+  300  dx ls
+  301  for f in *fastq_trimmed.gz; do 
+  302  /usr/local/
+  303  cd /usr/local/
+  304  ls -arlt
+  305  cd projects/
+  306  ls -arlt
+  307  cd TAKEDA_08MAY2017/
+  308  ls -arlt
+  309  cd reference98/
+  310  ls -arlt
+  311  cd ..
+  312  cd counts
+  313  ls -arlt ../../UKbio/ukbfetch
+  314  ls -arlt ../../UKbio/
+  315  ls -arlt ../../UKbio/ukbconv
+  316  ls -arlt ../QC
+  317  ls -arlt
+  318  dx login
+  319  ls -arlt
+  320  top
+  321  htop
+  322  logout
+  323  ls -arlt
+  324  dxt
+  325  dx select 1
+  326  dx select
+  327  docker
+  328  top
+  329  docker
+  330  logout
+  331  ls -arlt
+  332  git clone https://github.com/GMOD/jbrowse
+  333  cd jbrowse
+  334  ./setup.sh
+  335  ls -arlt
+  336  rm dx-toolkit-v0.289.1-centos-amd64.tar.gz 
+  337  rm dnanexus-upload-agent-1.5.31-linux.tar.gz 
+  338  htop
+  339  top
+  340  ls a-rlt
+  341  ls -arlt
+  342  logout
+  343  ls a-rlt
+  344  ls -arlt
+  345  cd 2019sra_data/
+  346  ls a-rlt
+  347  ls -arlt
+  348  cd wgs
+  349  ls -arlt
+  350  pwd
+  351  cd .
+  352  cd ..
+  353  ls 
+  354  cd files
+  355  ls a-rlt;'
+  356  cccc
+  357  '
+  358  ls -arlt
+  359  cd ..
+  360  ls -arlt
+  361  cd ..
+  362  pwd
+  363  ls -arlt
+  364  mkdir genewerk
+  365  ls a-rlt
+  366  cd genewerk/
+  367  ls -arlt
+  368  git clond https://github.com/G100DKFZ/gene-is.git
+  369  git clone https://github.com/G100DKFZ/gene-is.git
+  370  df
+  371  pwd
+  372  cd /usr/local/projects/
+  373  ls -arlt
+  374  cd gene-is/
+  375  ls -arlt
+  376  git pull
+  377  pwd
+  378  cd ../UKbio/
+  379  ls -arlt
+  380  cd ukbfetch 
+  381  cat ukbfetch 
+  382  clear
+  383  ls -arlt
+  384  df
+  385  logout
+  386  ls -arlt
+  387  top
+  388  cd /usr/
+  389  ls -arlt
+  390  cd local
+  391  ls -arlt
+  392  cd projects/
+  393  ls -arlt
+  394  du
+  395  du -hT
+  396  df -hT
+  397  df -hm
+  398  df -hmG
+  399  df -hG
+  400  df -hm
+  401  df -hg
+  402  df -hm
+  403  cd /usr/local/projects/TAKEDA_08MAY2017/
+  404  ls -arlt
+  405  cd ..
+  406  ls -arlt
+  407  rm -rf TAKEDA_08MAY2017
+  408  dxt
+  409  ls -arlt
+  410  cd genewerk/
+  411  ls a-rlt
+  412  ls -artl
+  413  cd ..
+  414  pwd
+  415  dx run RL_Sleeper_App
+  416  dx run --allow-ssh cloud_workstation
+  417  dx run app-cloud_workstation --allow-ssh
+  418  pip install sqlite
+  419  python
+  420  pip install apsw
+  421  sudo pip install apsw
+  422  logout
+  423  ls -arlt
+  424  cd genewerk/
+  425  ls -arlt
+  426  cd ..
+  427  ls -arlt
+  428  cd ..
+  429  cd lbang/
+  430  ls -arlt
+  431  logout
+  432  cd /usr/local/projects/
+  433  ls -arlt
+  434  cd ../share/
+  435  ls -arlt
+  436  cd ..
+  437  cd usr/
+  438  ls -arlt
+  439  cd local/
+  440  ls -arlt
+  441  cd projects/
+  442  ls -arlt
+  443  logout
+  444  ls -arlt
+  445  cd genewerk/
+  446  ls -arlt
+  447  cd ..
+  448  ls -arlt
+  449  history |grep du
+  450  du -hT
+  451  du -h
+  452  logout
+  453  ls -arlt
+  454  history |grep dx
+  455  dxt
+  456  dx run --allow-ssh cloud_workstation
+  457  history |grep dx
+  458  dx run --allow-ssh app-cloud_workstation
+  459  history |grep dx
+  460  logout
+  461  ls -arlt
+  462  cd genewerk/
+  463  ls -arlt
+  464  cd ..
+  465  find / -name "gene-is"
+  466  cd /usr/local/projects/gene-is/
+  467  ls -arlt
+  468  pwd
+  469  vim README.md 
+  470  vi README.md
+  471  scripts/testGenis.sh 
+  472  ./scripts/testGenis.sh 
+  473  pwd
+  474  vi ~/.bash_profile
+  475  ls -arlt
+  476  cd scripts/
+  477  ls -arlt
+  478  ./testGenis.sh 
+  479  pwd
+  480  export GENIS=/usr/local/projects/gene-is/
+  481  ./testGenis.sh 
+  482  ls -arlt
+  483  cd genewerk/
+  484  ls -arlt
+  485  cd ..
+  486  ls -arlt
+  487  cd /usr/local/projects/
+  488  ls -arlt
+  489  cd gene-is/
+  490  ls a-rlt
+  491  ls -arlt
+  492  cd test
+  493  cd ../testFiles
+  494  ls a-rlt
+  495  ls -arlt
+  496  gunzip -k r2.5750seq.LAMinsilico.gz |head
+  497  gunzip -cd r2.5750seq.LAMinsilico.gz |head
+  498  gunzip -cd r2.5750seq.LAMinsilico.gz |tail
+  499  history |grep dx
+  500  ls -arlt
+  501  dxt
+  502  logout
+  503  cd /usr/
+  504  history |grep find
+  505  find / -name 'gene-is'
+  506  cd /usr/local/projects/gene-is/
+  507  ls -arlt
+  508  ./testGenis.sh
+  509  cd scripts/
+  510  ./testGenis.sh
+  511  pwd
+  512  export GENIS=/usr/local/projects/gene-is
+  513  ./testGenis.sh
+  514  ls -arlt
+  515  top
+  516  htop
+  517  history |tail 5
+  518  history |tail -5
+  519  ls -arlt
+  520  cd /usr/local
+  521  ls -arlt
+  522  cd projects/
+  523  l s-arlt
+  524  ls -arlt
+  525  cd gene-is/
+  526  ls -arlt
+  527  cp configFile_targetedSequencing_pairedEnd.txt configFile_targetedSequencing_pairedEnd_old.txt 
+  528  vim configFile_targetedSequencing_pairedEnd.txt 
+  529  vi configFile_targetedSequencing_pairedEnd.txt 
+  530  ls -arlt
+  531  cd scripts/
+  532  ./testGenis.sh 
+  533  pwd
+  534  export GENIS=/usr/local/projects/gene-is
+  535  1
+  536  ./testGenis.sh 
+  537  cd ..
+  538  ls -arlt
+  539  mkdir dxfiles
+  540  cd dxfiles
+  541  ls -arlt
+  542  dx ls
+  543  dxt
+  544  vim ~/.bash_profile
+  545  vi ~/.bash_profile
+  546  . ~/.bash_profile
+  547  top
+  548  cd /usr/local/projects
+  549  ls -arlt
+  550  cd gene-is/
+  551  ls -arlt
+  552  vim configFile_targetedSequencing_pairedEnd.txt 
+  553  vi configFile_targetedSequencing_pairedEnd.txt 
+  554  cd scripts/
+  555  ./testGenis.sh 
+  556  history |grep export
+  557  export GENIS=/usr/local/projects/gene-is
+  558  ./testGenis.sh 
+  559  vim ../configFile_targetedSequencing_pairedEnd.txt 
+  560  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  561  sudo reboot
+  562  ls -arlt
+  563  cd /usr/local/projects/
+  564  cd gene-is/
+  565  ls -arlt
+  566  cd dxfiles
+  567  ls -arlt
+  568  ls -arlt dxrefs
+  569  ls -arlt ../dxrefs
+  570  head ../dxrefs/sean_p3653.fa 
+  571  ls -arlt ../dxrefs
+  572  cd ../dxrefs
+  573  mv genewerks_mm10_refseq genewerks_mm10_refseq.txt
+  574  dxt
+  575  ls -arlt
+  576  dx ls
+  577  dx cd GENE-IS
+  578  dx ls
+  579  dx cd ..
+  580  dx download dataexchange.gnwkservices.com/
+  581  dx cd dataexchange.gnwkservices.com/
+  582  dx ls
+  583  dx cd ULT
+  584  dx ls
+  585  dx cd ULT01GW
+  586  dx ls
+  587  dx cd fastq
+  588  dx ls
+  589  dx ls AS-415195-LR-46844*
+  590  dx download AS-415195-LR-46844*
+  591  dx ls
+  592  dx cd ..
+  593  pwd
+  594  dx pwd
+  595  dx cd ULT01GW
+  596  dx cd 
+  597  dx cd GENE-IS
+  598  dx ls
+  599  cd ..
+  600  ls -arlt
+  601  mkdir dxrefs
+  602  cd dxrefs
+  603  dx ls 
+  604  dx cd references
+  605  dx ls
+  606  dx download *
+  607  ls
+  608  cd ..
+  609  vim configFile_targetedSequencing_pairedEnd.txt 
+  610  vi configFile_targetedSequencing_pairedEnd.txt 
+  611  ls -arlt dxfiles
+  612  pwd
+  613  vi configFile_targetedSequencing_pairedEnd.txt 
+  614  yum install vim
+  615  sudo yum install vim
+  616  df -h
+  617  sudo yum update
+  618  ls -arlt
+  619  cd /usr/local/projects/gene-is/
+  620  ls a-rlt
+  621  ls -arlt
+  622  vi configFile_targetedSequencing_pairedEnd.txt 
+  623  bwa
+  624  which bwa
+  625  which blat
+  626  which skewer
+  627  which samtools
+  628  which bedtools
+  629  pip install skewer
+  630  vim configFile_targetedSequencing_pairedEnd.txt 
+  631  vi configFile_targetedSequencing_pairedEnd.txt 
+  632  bash -c 'curl -k -L https://downloads.sourceforge.net/project/skewer/Binaries/skewer-${SKEWER_VERSION}-linux-x86_64 > /usr/local/bin/skewer'
+  633  sudo bash -c 'curl -k -L https://downloads.sourceforge.net/project/skewer/Binaries/skewer-${SKEWER_VERSION}-linux-x86_64 > /usr/local/bin/skewer'
+  634  sudo bash -c 'curl -k -L https://downloads.sourceforge.net/project/skewer/Binaries/skewer-0.2.2-linux-x86_64 > /usr/local/bin/skewer'
+  635  sudo bash -c 'curl -k -L http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/blat/blat > /usr/local/bin/blat'
+  636  ls -arlt /usr/local/bin/bla*
+  637  ls -arlt /usr/local/bin/sam*
+  638  ls -arlt /usr/local/bin/skewer
+  639  vim configFile_targetedSequencing_pairedEnd.txt 
+  640  vi configFile_targetedSequencing_pairedEnd.txt 
+  641  ./testGenis.sh 
+  642  cd scripts
+  643  ./testGenis.sh 
+  644  export GENIS=/usr/local/projects/gene-is
+  645  ./testGenis.sh 
+  646  ls /usr/local/projects/gene-is/test/dxfiles/AS-415195-LR-46844_R1.fastq.gz
+  647  ls /usr/local/projects/gene-is/test/dxfiles/
+  648  ls /usr/local/projects/gene-is/test/
+  649  pwd
+  650  ls ../dxfiles
+  651  vim ../configFile_targetedSequencing_pairedEnd.txt 
+  652  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  653  ./testGenis.sh 
+  654  yum install BEDTools
+  655  sudo yum install BEDTools
+  656  ./testGenis.sh 
+  657  which bedtools
+  658  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  659  ./testGenis.sh 
+  660  which bedtools
+  661  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  662  ./testGenis.sh 
+  663  which skewer
+  664  conda install -c bioconda skewer
+  665  pwd
+  666  ls /usr/local/bin/s*
+  667  sudo bash -c 'curl -k -L https://downloads.sourceforge.net/project/skewer/Binaries/skewer-0.2.2-linux-x86_64 > /usr/bin/skewer'
+  668  ./testGenis.sh 
+  669  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  670  ./testGenis.sh 
+  671  which skewer
+  672  chmod +x /usr/bin/skewer
+  673  sudo chmod +x /usr/bin/skewer
+  674  ./testGenis.sh 
+  675  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  676  ls -arlt
+  677  grep -rnw '.' -e "Alignment in process"
+  678  vim GENIS.pl 
+  679  vi GENIS.pl 
+  680  ./testGenis.sh 
+  681  history
+  682  history |grep export
+  683  export GENIS=/usr/local/projects/gene-is
+  684  ls -arlt
+  685  cd /usr/local/projects
+  686  ls -arlt
+  687  cd gene-is/
+  688  ls -arlt
+  689  cd scripts/
+  690  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  691  vim GENIS.pl 
+  692  vi GENIS.pl 
+  693  cp GENIS.pl GENIS_old.pl
+  694  vi GENIS.pl
+  695  ./testGenis.sh 
+  696  export GENIS=/usr/local/projects/gene-is
+  697  ./testGenis.sh 
+  698  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  699  cd /usr/local/projects/
+  700  cd gene-is/
+  701  ls -arlt
+  702  cd /usr/local/projects/
+  703  ls -arlt
+  704  cd gene-is/
+  705  ls -arlt
+  706  cd scripts
+  707  ls -arlt
+  708  export GENIS=/usr/local/projects/gene-is
+  709  ./testGenis.sh 
+  710  ls /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  711  vim GENIS.pl 
+  712  vi GENIS.pl 
+  713  ./testGenis.sh 
+  714  vim testGenis.sh 
+  715  vi testGenis.sh 
+  716  vi GENIS.pl 
+  717  ./testGenis.sh 
+  718  ls -arlt
+  719  mv GENIS.pl GENIS_old_deletesoon.sh
+  720  mv GENIS_old.pl GENIS.pl
+  721  ./testGenis.sh 
+  722  ls -artl /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/filtTrim*
+  723  ls -artl /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  724  vi GENIS.pl 
+  725  vi ~/.vimrc
+  726  vi GENIS.pl 
+  727  grep -rnw "." -e "suffOut"
+  728  vi GENIS.pl 
+  729  ./testGenis.sh 
+  730  vi GENIS.pl 
+  731  ./testGenis.sh 
+  732  vi GENIS.pl 
+  733  ./testGenis.sh 
+  734  vi GENIS.pl 
+  735  ./testGenis.sh 
+  736  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  737  vi ../configFile_targetedSequencing_pairedEnd.txt 
+  738  ls -arlt
+  739  cd /Users/lbang/Box Sync/Mac/Documents/ux-notebook-share/
+  740  vi ~/.bash_profile
+  741  . ~/.bash_profile
+  742  ls -arlt
+  743  cdgis
+  744  ls -arlt
+  745  ls -arlt test/datasets
+  746  ls -arlt dxrefs/
+  747  cd dxrefs/
+  748  ls -arlt ../test/datasets/*.bwt
+  749  bwa
+  750  bwa index -a bwtsw Mus_musculus.GRCm38.dna.primary_assembly.fa Mus_musculus.GRCm38.dna
+  751  ls -arlt
+  752  cd scripts
+  753  cd ../scripts/
+  754  ls a-rlt
+  755  ls -artl
+  756  ./testGenis.sh 
+  757  history |grep export
+  758  export GENIS=/usr/local/projects/gene-is
+  759  ./testGenis.sh 
+  760  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  761  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd
+  762  vi GENIS.pl 
+  763  grep -rnw "samtools sort" -e .
+  764  grep -rnw "." -e "samtools sort"
+  765  ls -arlt /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/
+  766  mv /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/completAlignment.sorted /usr/local/projects/gene-is/test/targetedSequencing/results/pairedEnd/completAlignment.sorted.bam
+  767  cp alignment.pl alignment_old.pl
+  768  vim alignment.pl 
+  769  screen sudo yum install vim
+  770  vim alignment.pl 
+  771  sl -arlt
+  772  ls -arlt
+  773  vi scripts/alignment.pl 
+  774  samtools sort
+  775  vi scripts/alignment.pl 
+  776  cd scripts/
+  777  ./testGenis.sh 
+  778  history |grep export
+  779  export GENIS=/ust/local/projects/gene-is
+  780  ./testGenis.sh 
+  781  ls -arlt
+  782  cd ..
+  783  cd scripts/
+  784  ./testGenis.sh 
+  785  export GENIS=/ust/local/projects/gene-is/
+  786  ./testGenis.sh 
+  787  export GENIS=/usr/local/projects/gene-is
+  788  ./testGenis.sh 
+  789  ls -arlt ../test/targetedSequencing/results
+  790  ls -arlt ../test/targetedSequencing/results/pairedEnd/
+  791  cat ../test/targetedSequencing/results/pairedEnd/AS-415195-LR-46844.GeneralStatistics.txt 
+  792  ls -arlt ../test/targetedSequencing/results/pairedEnd/
+  793  pwd
+  794  cd ../test/targetedSequencing/results/pairedEnd/
+  795  cp completAlignment.sorted completAlignment.sorted.bam
+  796  ls -arlt
+  797  cdgis
+  798  cd scripts/
+  799  ./testGenis.sh 
+  800  vim alignment.pl
+  801  ./testGenis.sh 
+  802  cd /usr/local/projects
+  803  ls -arlt
+  804  cd gene-is/
+  805  ls -arlt
+  806  vim configFile_targetedSequencing_pairedEnd.txt 
+  807  vi configFile_targetedSequencing_pairedEnd.txt 
+  808  cd dxrefs
+  809  screen 
+  810  yum install screen
+  811  sudo yum install screen
+  812  screen bwa index -a bwtsw mm10_p3653assembly.fa mm10_p3653assembly.fa
+  813  screen bwa index -a bwtsw sean_p3653.fa sean_p3653.fa
+  814  screen
+  815  ls -arlt
+  816  ls -arlt --block-size=G
+  817  ls -arlt --block-size=M
+  818  ls -arlt
+  819  cdgis
+  820  ls -arlt
+  821  cd scripts/
+  822  history > geneisprep.history.txt
